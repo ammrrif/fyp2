@@ -1,0 +1,98 @@
+/* General Page Styles */
+body {
+    background-color: #faf5ef;
+    font-family: "Raleway", sans-serif; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px; /* Added padding to make it larger */
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #555;
+}
+
+/* Main Section Styles */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 90px;
+    color: #000;
+    margin: -170px 0px 20px 0px;
+}
+
+.content button {
+    background-color: #1E4DB7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #163D8B;
+}
+
+.image-container {
+    position: relative;
+    max-width: 40%;
+}
+
+.image-container img {
+    width: 190%;
+    border-radius: 10px;
+    transform: translateX(-300px) translateY(-50px); /* Moves the image left */
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay img {
+    width: 50px;
+}

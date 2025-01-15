@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    
+    <!--Montserrat Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form name="loginForm" method="post" action="loginverify.php">  <!-- action sends the form data to loginverify.php -->
+        <h2>Login</h2>
+
+        <p> 
+            <a href="studreg.php" class="signup-link">Sign up as a student</a> or 
+            <a href="tutreg.php" class="signup-link">Sign up as a tutor</a>
+        </p>
+
+        <div>
+            <label for="ID">Student ID:</label>
+            <input type="text" id="id" name="id" placeholder="Enter your student ID" required>
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

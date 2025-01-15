@@ -1,0 +1,359 @@
+/* General Styles */
+body {
+    background-color: #faf5ef;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #555;
+}
+
+/* Layout Styles */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    padding: 20px 40px; /* Adjust padding */
+    align-items: flex-start; /* Align items to the top */
+    border-radius: 8px; /* Add rounded corners */
+    margin: auto; /* Center the container */
+    height: 435px; /* Set a specific height */
+}
+/* Tutor Details Styles */
+.tutor-details {
+    flex: 1;
+    max-width: 45%; /* Adjust the width as needed */
+    padding-right: 20px; /* Add some space between the columns */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: white; /* Set background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Add rounded corners */
+    min-height: 371px;
+    position: relative; /* Add this to position the button inside the container */
+}
+
+.tutor-info {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tutor-picture {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the picture round */
+    object-fit: cover; /* Ensure the picture covers the area */
+}
+
+.tutor-description {
+    margin-left: 20px;
+}
+
+.tutor-description h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.tutor-description p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.book-now {
+    position: absolute; /* Position the button absolutely */
+    bottom: 80px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 20px from the right */
+}
+
+.book-btn, .na-btn, .booked-btn {
+    width: 60%; /* Make the button width smaller */
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute; /* Position the button absolutely */
+    bottom: 5px; /* Place the button 5px from the bottom */
+    left: 5px; /* Place the button 5px from the left */
+}
+
+.book-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+
+.book-btn:hover {
+    background-color: #14528d;
+}
+
+.na-btn {
+    background-color: #f44336;
+    color: white;
+    cursor: not-allowed;
+}
+
+.booked-btn {
+    background-color: #FFA500;
+    color: white;
+}
+
+.view-ratings-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E4DB7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view-ratings-btn:hover {
+    background-color: #14528d;
+}
+
+/* Calendar Styles */
+.prev-month, .next-month {
+    font-size: 25px;
+    cursor: pointer;
+    color: #1E4DB7;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.month-year {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add some space between the arrows and the month-year text */
+}
+
+.calendar-body {
+    width: 10%;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 10px;
+}
+
+
+
+
+.calendar-body th, .calendar-body td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+    text-align: center;
+}
+
+.calendar-body th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.day.empty {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.day.available {
+    background-color: #f9f9f9;
+    color: white;
+}
+
+.day.unavailable {
+    background-color: #f9f9f9;
+    color: white;
+}
+
+.day.available:hover {
+    background-color: #f9f9f9; /* Slightly darker green for available dates on hover */
+}
+
+.day.unavailable:hover {
+    background-color: #f9f9f9; /* Slightly darker red for unavailable dates on hover */
+}
+
+.day.today {
+    border: 2px solid #1E4DB7; /* Complete the color code for the border */
+}
+
+.day {
+    background-color: #f9f9f9; /* Set background color to white */
+    color: #000; /* Set text color to black for better contrast */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Reduce the width of the table */
+    max-width: 500px; /* Adjust the max-width */
+    margin: auto;
+    table-layout: fixed; /* Ensures all cells have the same width */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    width: 120px; /* Reduce the width of the cells */
+    height: 60px; /* Reduce the height of the cells */
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+}
+
+.date-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px; /* Reduce the font size */
+    font-weight: bold;
+}
+
+.availability-calendar {
+    flex: 1;
+    max-width: 45%; /* Adjust the width as needed */
+    text-align: center;
+    margin-top: 0; /* Remove the top margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Set background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 20px; /* Add padding */
+}
+
+/* Selected Session Styles */
+.selected-session {
+    width: 90%; /* Increase the width */
+    text-align: center;
+    margin-top: 20px;
+    display: block; /* Ensure it behaves as a block element */
+    padding: 40px; /* Increase padding */
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: auto; /* Center the box */
+    margin-right: auto; /* Center the box */
+}
+
+.selected-session h2 {
+    margin-left: 0; /* Center the heading */  
+    margin-top: -10px;
+}
+
+.selected-session table {
+    max-width: 100%; /* Ensure the table takes full width of the container */
+    border-collapse: collapse;
+    margin-top: -10px; /* Increase space above the table */
+}
+
+.selected-session th, .selected-session td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increase padding */
+    text-align: center;
+}
+
+.selected-session th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.pay-now-btn {
+    margin-left: 0; /* Center the button */
+    position: relative;
+    top: 0; /* Adjust the value as needed to move up */
+}
+
+.ratings {
+    flex: 1;
+    max-width: 100%;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.ratings-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ratings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ratings th, .ratings td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.ratings th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

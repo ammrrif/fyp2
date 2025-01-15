@@ -1,0 +1,147 @@
+/* General Reset */
+body {
+    background-color: #faf5ef;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full screen height */
+}
+
+.login-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full-screen center alignment */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 25px 30px;  /* Slightly more padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;  /* Increased width */
+    max-height: 90vh; /* Adjusted max-height */
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: visible; /* Remove scrollable box */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 30px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6c03;
+}
+
+select {
+    width: 100%;
+    padding: 8px;  /* Increased padding for better spacing */
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 13px;  /* Consistent font size with other inputs */
+    background-color: white;
+    cursor: pointer;
+    height: auto;  /* Let the height adjust automatically based on content */
+}
+
+/* File Input Styles - Profile Picture */
+input[type="file"].profile-picture {
+    width: 100%;
+    padding: 7px;  /* Increased padding to make it bigger */
+    margin-bottom: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: auto;
+    line-height: 1.5;  /* Ensure line height fits the content */
+}
+
+/* File Input Text (No file selected) */
+input[type="file"].profile-picture::-webkit-file-upload-button {
+    padding: 5px 6px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect for File Input Button */
+input[type="file"].profile-picture::-webkit-file-upload-button:hover {
+    background-color: #ff6c03;
+}
+
+/* Account link styling */
+.account-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.account-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 13px;
+    line-height: 1.5;  /* Ensure the placeholder is properly spaced */
+}

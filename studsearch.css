@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #555;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar {
+    width: 40%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1E4DB7;
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #153A8C;
+}
+
+/* Tutors Section */
+.tutors-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tutor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.tutor-card {
+    width: 250px; /* Increased width */
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 20px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    height: auto; /* Let the card height adjust based on content */
+}
+
+.tutor-card p {
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0; /* Increased margin between name and subject */
+}
+
+.tutor-card .session-time {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.tutor-card:hover {
+    transform: translateY(-10px);
+}
